@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
 
     <script src="js/jQuery.js"></script>
+    
     <script src="jquery-ui/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
@@ -22,6 +23,8 @@
             });
         });
     </script>
+    
+
 </head>
 
 <body>
@@ -34,12 +37,12 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-sm">
-                    <label for="valueOne">Valor Uno</label>
-                    <input type="text" class="form-control" id="valueOne" onkeypress="return onlyNums(event)" required>
+                    <label for="numOne">Número Uno</label>
+                    <input type="text" class="form-control" id="numOne" onkeypress="return onlyNums(event)" required>
                 </div>
                 <div class="form-group col-sm">
-                    <label for="valueTwo">Valor Dos</label>
-                    <input type="text" class="form-control" id="valueTwo" required>
+                    <label for="numTwo">Número Dos</label>
+                    <input type="text" class="form-control" id="numTwo" onkeypress="return onlyNums(event)" required>
                 </div>
             </div>
 
@@ -73,8 +76,8 @@
 
             <div class="form-row">
                 <div class="form-group col-sm">
-                    <label for="opt">Opcion</label>
-                    <select id="opt" class="form-control">
+                    <label for="option">Opciones</label>
+                    <select id="option" class="form-control">
                         <option>Seleccione Opción....</option>
                         <option>Sumar</option>
                         <option>Restar</option>
@@ -89,6 +92,7 @@
                         <option>Nombre Propio</option>
                         <option>Pal&iacute;ndromo</option>
                     </select>
+                 
                 </div>
             </div>
 
@@ -102,12 +106,12 @@
                 </div>
 
                 <div class="form-group col-sm">
-                    <button type="button" class="btn btn-success form-control" id="btnView">Visualizar</button>
+                    <button type="button" class="btn btn-success form-control" onclick="operaciones()">Visualizar</button>
                 </div>
             </div>
         </form>
         <br>
-        <p id="layout" style="background: pink">
+        <p id=result style="background: pink">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, animi, ipsum. Sequi labore exercitationem eveniet inventore dolorum at aliquam facilis quod atque temporibus cupiditate laboriosam quisquam dolores, qui quis corrupti.
         </p>
 
