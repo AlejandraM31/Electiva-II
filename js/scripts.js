@@ -91,7 +91,7 @@ function operaciones(){
                 alert("El MCD es : "+ divisor);
              break;
             case 7:
-                
+                alert("NUMEROS AMIGOS")
                 break;
           default:
         }
