@@ -70,15 +70,17 @@ function operaciones(){
                 result=Math.pow(nOne,nTwo);
                 break;
             case 6:
-                while(nOne!=nTwo){
-                    if(nOne>nTwo){
-                        nOne=nOne-nTwo;
-                    }else{
-                        nTwo=nTwo-nOne;
-                        result=("El MCD ES:"+nOne);
-                    }
-                }
-                
+               var  resto;
+               var  numDiv1=nOne;
+               var  numDiv2=nTwo;
+                do{
+                    resto=numDiv1%numDiv2;
+                    numDiv1=numDiv2;
+                }while(resto!=0);
+                 result =("El MCD :"+numDiv2);
+                break;
+            case 7:
+                break;
           default:
         }
         var r = document.getElementById("result");
