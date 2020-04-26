@@ -70,15 +70,26 @@ function operaciones(){
                 result=Math.pow(nOne,nTwo);
                 break;
             case 6:
+               var  dividendo;
+               var  divisor;
                var  resto;
-               var  numDiv1=nOne;
-               var  numDiv2=nTwo;
+                if(nOne>nTwo){
+                    dividendo=nOne;
+                    divisor=nTwo;
+                }else{
+                    dividendo=nTwo;
+                    divisor=nOne;
+                }
+                resto=dividendo%divisor;
                 do{
-                    resto=numDiv1%numDiv2;
-                    numDiv1=numDiv2;
-                }while(resto!=0);
-                 result =("El MCD :"+numDiv2);
-                break;
+                    dividendo=divisor;
+                    divisor=resto;
+                    resto=dividendo%divisor;
+                }
+                while(resto!=0);
+                result="El MCD de: " + nOne + " y " + nTwo + " es:  " +divisor;
+                alert("El MCD es "+ divisor);
+             break;
             case 7:
                 break;
           default:
