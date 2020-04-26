@@ -51,14 +51,34 @@ function operaciones(){
           case 1: result = nOne + nTwo;
             break;
           case 2:
-            result = nOne>nTwo?nOne-nTwo: nTwo-nOne;
+            if(nOne>nTwo){
+                result=nOne-nTwo;
+            }else{
+             result=nTwo-nOne;
+             }
             break;
           case 3:
           result = nOne*nTwo;
           break;
           case 4:
-            result =  nOne>nTwo? nOne/nTwo:0;
+            result =  nOne>nTwo? nOne/nTwo:nTwo/nOne;
+                if(nTwo==0){
+                    alert("La division por cero no existe,los numeros ingresados no pueden ser cero");
+                }
             break;
+            case 5:
+                result=Math.pow(nOne,nTwo);
+                break;
+            case 6:
+                while(nOne!=nTwo){
+                    if(nOne>nTwo){
+                        nOne=nOne-nTwo;
+                    }else{
+                        nTwo=nTwo-nOne;
+                        result=("El MCD ES:"+nOne);
+                    }
+                }
+                
           default:
         }
         var r = document.getElementById("result");
