@@ -88,9 +88,10 @@ function operaciones(){
                 }
                 while(resto!=0);
                 result="El MCD de: " + nOne + " y " + nTwo + " es:  " +divisor;
-                alert("El MCD es "+ divisor);
+                alert("El MCD es : "+ divisor);
              break;
             case 7:
+                
                 break;
           default:
         }
