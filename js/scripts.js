@@ -91,7 +91,18 @@ function operaciones(){
                 alert("El MCD es : "+ divisor);
              break;
             case 7:
-                alert("NUMEROS AMIGOS")
+                alert("NUMEROS AMIGOS");
+                var amigos;
+                var sumaDivisores;
+                var numero;
+                var i;
+                for(i=1;i<numero;i++){
+                    var sumaDivisores=0;
+                    if(numero%i==0){
+                        sumaDivisores+=i;
+                      }
+                    alert(sumaDivisores);
+                }
                 break;
           default:
         }
