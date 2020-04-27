@@ -121,6 +121,7 @@ function operaciones(){
                    
                 break;
                case 8:
+                alert("numeros primos")
                 break;
           default:
         }
