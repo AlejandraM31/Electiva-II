@@ -91,17 +91,27 @@ function operaciones(){
                 alert("El MCD es : "+ divisor);
              break;
             case 7:
-                alert("NUMEROS AMIGOS");
-                var amigos;
-                var sumaDivisores;
-                var numero;
+               alert("Numeros amigos");
                 var i;
-                for(i=1;i<numero;i++){
-                    var sumaDivisores=0;
-                    if(numero%i==0){
-                        sumaDivisores+=i;
-                      }
-                    alert(sumaDivisores);
+                var sumaDiv=0;
+                for(i=1;i<nOne;i++){ //for para sumar los divisores propios del numero uno
+                    if(nOne%i==0){
+                        sumaDiv=sumaDiv+i;
+                    }
+                }
+                //si la suma de los divisores de nOne es igual a nTwo
+                if(sumaDiv==nTwo){
+                    sumaDiv=0;
+                    for(i=1;i<nTwo;i++){ //sumo los divisores propios de nTwo
+                        if(nTwo%i==0){
+                            sumaDiv=sumaDiv+i;
+                        }
+                    }
+                //si la suma de los divisores de nTwo es igual  a nOne 
+                 if(sumaDiv==nOne){
+                   result="Los numeros SÍ SON AMIGOS";
+                }else{
+                   result="Los numeros NO SON AMIGOS";
                 }
                 break;
           default:
