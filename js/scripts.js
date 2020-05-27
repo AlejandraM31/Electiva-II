@@ -150,6 +150,8 @@ function operaciones(){
                 }
                 document.getElementById("foot").appendChild(document.createTextNode(`Hay ${contCousings} numeros primos la Suma es ${sum}`));
                 break;
+            case 9:
+                break;
           default:
         }
         var r = document.getElementById("result");
