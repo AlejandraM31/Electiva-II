@@ -121,12 +121,47 @@ function operaciones(){
                    
                 break;
                case 8:
-                alert("numeros primos")
+                alert("numeros primos table")
+                var less=nOne<nTwo?nOne:nTwo;
+	            var higher=nOne>nTwo?nOne:nTwo;
+	            alert(`Mayor=${higher} Menor=${less}`);
+	            document.getElementById("titHead").innerHTML="";
+	            document.getElementById("titHead").appendChild(document.createTextNode(`Numeros primos del ${less} al ${higher}`));
+                var tBody=document.getElementById("tblBody");
+                document.getElementById("tblBody").innerHTML="";
+                var contCousings=0;
+                var sum=0;
+
+                for(var cont=less;cont<=higher;cont++){
+                    if(isCousing(cont)){
+                        var row=document.createElement("tr");
+                        var col=document.createElement("td");
+                        col.appendChild(document.createTextNode(++contCousings));
+                        row.appendChild(col);
+
+                        col=document.createElement("td");
+                        col.appendChild(document.createTextNode(cont));
+                        row.appendChild(col);
+                        tBody.appendChild(row);
+                         sum+=cont;
+
+                                            //hola
+                    }
+                }
+                document.getElementById("foot").appendChild(document.createTextNode(`Hay ${contCousings} numeros primos la Suma es ${sum}`));
                 break;
           default:
         }
         var r = document.getElementById("result");
         r.innerHTML = "El resultado es " + result;
       }
+function isCousing(n){
+	var cont=2;
+	var cousing=true;
+	while(cont<=n/2 && cousing){
+		cousing=!(n%cont++==0);
+	}
+	return cousing;
+}
 
 
