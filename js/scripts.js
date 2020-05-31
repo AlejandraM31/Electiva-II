@@ -146,6 +146,7 @@ function operaciones(){
                 document.getElementById("foot").appendChild(document.createTextNode(`Hay ${contCousings} numeros primos la Suma es ${sum}`));
                 break;
             case 9:
+                alert("diferencia de años en calendario")
                 break;
           default:
         }
