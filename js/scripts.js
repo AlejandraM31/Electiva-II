@@ -86,9 +86,8 @@ function operaciones(){
            resto=dividendo%divisor;
            }while(resto!=0);
                 result="El MCD de: " + nOne + " y " + nTwo + " es:  " +divisor;
-                alert("El MCD es : "+ divisor);
-        
-         break;
+                alert("El MCD es -->: "+ divisor);
+            break;
             case 7:
               // alert("Numeros amigos");
              var cont;
@@ -142,7 +141,6 @@ function operaciones(){
                         tBody.appendChild(row);
                          sum+=cont;
 
-                                            //hola
                     }
                 }
                 document.getElementById("foot").appendChild(document.createTextNode(`Hay ${contCousings} numeros primos la Suma es ${sum}`));
